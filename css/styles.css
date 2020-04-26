@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  align-items: center;
+  background-color: #5ab3f8;
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+}
+
+p {
+  display: inline-block;
+  margin: 0;
+}
+
+.container {
+  background-color: white;
+  border: 2px solid	#000;
+  border-radius: 5px;
+  display: flex;
+  padding: 2.5%;
+  width: 50%;
+}
+
+/**************************** Left Container ****************************/
+
+.left-container {
+  margin-right: 5%;
+  width: 40%;
+}
+
+.step {
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: flex;
+  padding: 3%;
+  position: relative;
+}
+
+.check-icon {
+  color: #4BB543;
+  position: absolute;
+    right: 15px;
+}
+
+.step:hover {
+  cursor: pointer;
+}
+
+#choose-title, #choose-description {
+  margin-bottom: 5%;
+}
+
+.num-circle {
+  align-items: center;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+
+  margin-right: 6%;
+  width: 2rem;
+}
+
+/**************************** Right Container ****************************/
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+/* Message Prompt */
+
+.content-prompt {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5%;
+  margin-bottom: 7%;
+}
+
+.btn {
+  background-color: lightgray;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3%;
+  margin-right: 3%;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#choose-description-content {
+  display: none;
+}
+
+#confirm-data-content {
+  display: none;
+}
+
+#confirmation-message-content {
+  display: none;
+}
+
+.thumbs-up-gif {
+  border: 2px solid #000;
+  width: 100%;
+}
+
+/* JS Click Styles */
+
+.unclicked {
+  border: 2px solid lightgray;
+  color: lightgray;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* Media Queries */
+
+@media (max-width: 1300px){
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left-container {
+    border-bottom: 2px dashed lightgray;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+
+  .right-container {
+    padding-top: 5%;
+    width: 100%;
+  }
+
+}

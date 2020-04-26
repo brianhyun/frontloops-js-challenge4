@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Progress Navigation</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Manrope:300,400,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/200654fd19.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!--
+        Create a progress navigation with previous/next buttons on each step and an overview of all steps.
+        Clicking next button on last step should bring the final screen
+        Steps in overview should be also clickable and change current step to the one click,
+        however you shouldn't be able to skip the next step, so if you're at 1 step - you can't go directly to 3.
+    -->
+
+    <div class="container">
+
+      <!--#################### Left Container ####################-->
+
+      <div class="left-container">
+        <div id="choose-title" class="step clicked">
+          <div class="num-circle">
+            <p class="num">1</p>
+          </div>
+          <p class="step-title">Choose Title</p>
+          <i class="choose-title-check-icon check-icon invisible fas fa-check"></i>
+        </div>
+
+        <div id="choose-description" class="step unclicked">
+          <div class="num-circle">
+            <p class="num">2</p>
+          </div>
+          <p class="step-title">Choose Description</p>
+          <i class="choose-description-check-icon check-icon invisible fas fa-check"></i>
+        </div>
+
+        <div id="confirm-data" class="step unclicked">
+          <div class="num-circle">
+            <p class="num">3</p>
+          </div>
+          <p class="step-title">Confirm Data</p>
+          <i class="confirm-data-check-icon check-icon invisible fas fa-check"></i>
+        </div>
+      </div> <!-- left container -->
+
+      <!--#################### Right Container ####################-->
+
+      <div class="right-container">
+
+        <!--##### Title Container #####-->
+
+        <div id="choose-title-content" class="content">
+          <div class="content-prompt">
+            <p>Choose Title Content</p>
+          </div>
+
+          <div class="button-prompt">
+            <div class="submit-title-btn btn">
+              <p>Submit Title</p>
+            </div>
+          </div>
+        </div>
+
+        <!--##### Description Container #####-->
+
+        <div id="choose-description-content" class="content">
+          <div class="content-prompt">
+            <p>Choose Description Content</p>
+          </div>
+
+          <div class="button-prompt">
+            <div class="cdc-back-btn btn">
+              <p>Back</p>
+            </div>
+            <div class="cdc-submit-btn btn">
+              <p>Submit Description</p>
+            </div>
+          </div>
+        </div>
+
+        <!--##### Confirm Data Container #####-->
+
+        <div id="confirm-data-content" class="content">
+          <div class="content-prompt">
+            <p>Happy with your selections?</p>
+          </div>
+
+          <div class="button-prompt">
+            <div class="confirm-data-back-btn btn">
+              <p>No, go back</p>
+            </div>
+            <div class="confirm-data-submit-btn btn">
+              <p>Yes, go ahead</p>
+            </div>
+          </div>
+        </div> <!-- confirm-data-content -->
+
+        <div id="confirmation-message-content" class="content">
+          <div class="content-prompt">
+            <p>Perfect! You're all set!</p>
+          </div>
+          <img class="thumbs-up-gif" src="https://media.giphy.com/media/uiMIJMFYgRaAz5Pcb7/giphy.gif" alt="thumbs-up-gif">
+        </div> <!-- confirm-data-content -->
+      </div> <!-- right container -->
+    </div> <!-- main container -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/index.js" charset="utf-8"></script>
+  </body>
+</html>
